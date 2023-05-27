@@ -1,0 +1,63 @@
+<style>
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.rating-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.rating-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating-input label {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: gray;
+}
+</style>

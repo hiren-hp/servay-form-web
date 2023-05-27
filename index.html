@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Survey Form</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: left;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .rating-label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .rating-input {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .rating-input label {
+        margin-right: 10px;
+      }
+
+      .submit-btn {
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .submit-btn:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <h1>Survey Form</h1>
+        <hr />
+        <label for="name"><span>Name:</span></label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="street-address"
+          ><span>Street Address:</span>
+          <input type="text" id="street-address" name="street-address" required
+        /></label>
+
+        <label for="address2"
+          ><span>Address 2:</span>
+          <input type="text" id="address2" name="address2"
+        /></label>
+
+        <label for="city"
+          ><span>City:</span> <input type="text" id="city" name="city" required
+        /></label>
+        <label for="state"
+          ><span> State:</span>
+          <input type="text" id="state" name="state" required
+        /></label>
+
+        <label for="zip"
+          ><span>Zip Code:</span>
+          <input type="text" id="zip" name="zip" required
+        /></label>
+
+        <label for="country"
+          ><span>Country:</span>
+          <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">india</option>
+          </select></label
+        >
+
+        <label for="contact"
+          ><span>Contact:</span>
+          <input
+            type="tel"
+            id="contact"
+            name="contact"
+            pattern="[0-9]{10}"
+            required
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="personal-details"><span>Personal Details:</span></label>
+        <textarea
+          id="personal-details"
+          name="personal-details"
+          required
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <h2>Ratings</h2>
+        <label for="rating1">Ratings1:</label>
+        <div class="rating-input">
+          <input type="radio" id="rating1-bad" name="rating1" value="bad" />
+          <label for="rating1-bad">Bad</label>
+          <input type="radio" id="rating1-good" name="rating1" value="good" />
+          <label for="rating1-good">Good</label>
+          <input
+            type="radio"
+            id="rating1-excellent"
+            name="rating1"
+            value="excellent"
+          />
+          <label for="rating1-excellent">Excellent</label>
+        </div>
+
+        <label for="rating2">Ratings2:</label>
+        <div class="rating-input">
+          <input type="radio" id="rating2-bad" name="rating2" value="bad" />
+          <label for="rating2-bad">Bad</label>
+          <input type="radio" id="rating2-good" name="rating2" value="good" />
+          <label for="rating2-good">Good</label>
+          <input
+            type="radio"
+            id="rating2-excellent"
+            name="rating2"
+            value="excellent"
+          />
+          <label for="rating2-excellent">Excellent</label>
+        </div>
+
+        <label for="rating3">Ratings3:</label>
+        <div class="rating-input">
+          <input type="radio" id="rating3-bad" name="rating3" value="bad" />
+          <label for="rating3-bad">Bad</label>
+          <input type="radio" id="rating3-good" name="rating3" value="good" />
+          <label for="rating3-good">Good</label>
+          <input
+            type="radio"
+            id="rating3-excellent"
+            name="rating3"
+            value="excellent"
+          />
+          <label for="rating3-excellent">Excellent</label>
+        </div>
+      </fieldset>
+
+      <input type="submit" value="Submit" class="submit-btn" />
+    </form>
+  </body>
+</html>
